@@ -1,0 +1,10 @@
+html
+    include includes/head.pug
+    body
+        h1 Mes sinceres salutations
+        p Bonjour a tous
+        ul
+        each number in resultat
+            li= number
+        form(action="/bonjour/index", method="post")
+            input(type="text", name="content")
